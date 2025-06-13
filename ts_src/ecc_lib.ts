@@ -19,7 +19,7 @@ export function initEccLib(
     // allow clearing the library
     _ECCLIB_CACHE.eccLib = eccLib;
   } else if (eccLib !== _ECCLIB_CACHE.eccLib) {
-    if (!opts?.DANGER_DO_NOT_VERIFY_ECCLIB)
+    if (!opts || !opts.DANGER_DO_NOT_VERIFY_ECCLIB)
       // new instance, verify it
       verifyEcc(eccLib!);
     _ECCLIB_CACHE.eccLib = eccLib;
