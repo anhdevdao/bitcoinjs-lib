@@ -1,6 +1,6 @@
 {
   "name": "@exchange-libs/bitcoinjs-lib",
-  "version": "7.0.0-rc.1",
+  "version": "7.0.0-rc.2",
   "description": "Client-side Bitcoin JavaScript library",
   "main": "./src/cjs/index.cjs",
   "types": "./src/cjs/index.d.ts",
